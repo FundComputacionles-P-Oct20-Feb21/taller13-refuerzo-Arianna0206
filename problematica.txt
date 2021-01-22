@@ -1,0 +1,31 @@
+
+1.Inicio
+2. funcion principal()
+3.	mensaje, x(20) {[A-Z},{a-z},{0-9},{BS}]
+4.	opcion, i[0-n]
+5.	mensaje <-- descomponer()
+6.	Escribir mensaje
+7. fin funcion princiapl()
+
+8. funcion descomponer()
+9.	k, d[0-n] <-- 1920
+10.	k1,d[0-n] <-- 0
+11.	j, i[0-n] <-- 0
+12.	cadena, x(20) {[A-Z},{a-z},{0-9},{BS}]
+13.	residuo, i[0-n]
+14.	k1 <-- k
+15.	Mientras (k1 > 0) entonces
+16.		residuo <-- obtenerResiduo(k1)
+17.		cadena <-- cadena + residuo + " * 10 elevado a la potencia j"
+18.		k1 <-- k1/10
+19.		j = j + 1
+20.	Fin Mientras
+21.	return cadena
+22. fin funcion descomponer()
+
+23. funcion obtenerResiduo(x ,i); i
+24.	z, i[0-n]
+25.	z <-- x MOD 10
+26.	return z
+27. fin funcion obtener Residuo()
+28. Fin
